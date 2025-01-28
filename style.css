@@ -1,12 +1,50 @@
+body{
+    margin: 0;
+}
+
 .header{
     background-color: #000000;
     display: flex;
     justify-content: space-between;
-    padding: 0 320px;
+    padding: 16px 320px;
+    align-items: center;
 }
 
 .header__mail, .header__link{
     color: #FFFFFF;
     text-decoration: none;
     font-family: "Roboto", serif;
+    font-size: 16px;
+}
+
+.header__block{
+    display: flex;
+    align-items: center;
+}
+
+.header__logo{
+    margin-right: 65px;
+}
+
+.header__mail{
+    padding: 4px 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+    border-radius: 4px;
+}
+
+.header__link{
+    margin-left: 20px;
+}
+
+.header__btn{
+    margin-left: 65px;
+    text-decoration: none;
+    background-color: #FF7143;
+    color: #000;
+    padding: 12px 32px;
+    white-space: nowrap;
+    border-radius: 6px;
+    font-family: "Roboto", serif;
+    font-weight: 600;
+    font-size: 16px;
 }
