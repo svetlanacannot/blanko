@@ -1,5 +1,10 @@
+*{
+    box-sizing: border-box;
+}
+
 body{
     margin: 0;
+    font-family: "Roboto", serif;
 }
 
 .block{
@@ -14,12 +19,14 @@ body{
     padding-top: 16px;
     padding-bottom: 16px;
     align-items: center;
+    position: fixed;
+    left: 0;
+    right: 0;
 }
 
 .header__mail, .header__link{
     color: #FFFFFF;
     text-decoration: none;
-    font-family: "Roboto", serif;
     font-size: 16px;
 }
 
@@ -169,4 +176,61 @@ body{
         padding-left: 16px;
         padding-right: 16px;
     }
+}
+
+/* INTRO */
+
+.intro{
+    background-color: #FF7143;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+}
+
+.intro__text{
+    text-align: center;
+}
+
+.intro__title{
+    font-size: 72px;
+    font-weight: 600;
+    margin-bottom: 27px;
+}
+
+.intro__descr{
+    font-size: 18px;
+    margin-bottom: 22px;
+    max-width: 587px;
+}
+
+.intro__btns{
+    display: flex;
+    justify-content: center;
+}
+
+.intro__btn{
+    border-radius: 6px;
+    padding: 20px 32px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.intro__btn--black{
+    background-color: #000000;
+    color: #ffffff;
+}
+
+.intro__btn--white{
+    background-color: #ffffff;
+    color: #000000;
+}
+
+.intro__btn:first-child{
+    margin-right: 8px;
+}
+
+.intro__img{
+    height: 100%;
 }
