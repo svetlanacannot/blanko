@@ -190,6 +190,7 @@ body{
 
 .intro__text{
     text-align: center;
+    margin-right: 25px;
 }
 
 .intro__title{
@@ -233,4 +234,56 @@ body{
 
 .intro__img{
     height: 100%;
+}
+
+@media(max-width: 1800px){
+    .intro__title{
+        font-size: 65px;
+    }
+}
+
+@media(max-width: 1400px){
+    .intro__title{
+        font-size: 55px;
+    }
+
+    .intro__btn{
+        padding: 15px 25px;
+    }
+}
+
+@media(max-width: 1000px){
+    .intro__title{
+        font-size: 48px;
+    }
+
+    .intro__btn{
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+}
+
+@media(max-width: 800px){
+    .intro__img{
+        display: none;
+    }
+
+    .intro__text{
+        margin-right: 0;
+    }
+
+    .intro__btn{
+        padding: 12px 0;
+        width: 100%;
+        min-width: 288px;
+    }
+
+    .intro__btn:first-child{
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .intro__btns{
+        flex-wrap: wrap;
+    }
 }
